@@ -3,6 +3,8 @@ Dynamic Portfolio Manager:
 DESCRIPTION: In this project, the "Dynamic Portfolio Manager" is designed to focus on the creating, editing, deletion and the management of the project cards with in the browser. This project holds on to the Local Storage to keep on the project data to ensure that all the changes through edition or deletion are retained across the browser.
 This project is basically a demonstration of JavaScript DOM manipulation, Event Handling, browser APIs ensuring seamless and persistent experience without the need for server-side backend to create a fully function and a user friendly web application.
 
+*To streamline the process, I recommend starting by creating a project card. Once that's set up, we can proceed with implementing all the refresh features and related tasks. This approach will ensure a solid foundation and make further steps more manageable.*
+
 Technologies Used: 
 1. HTML5: For structuring the we-page.
 2. CSS: For styling and responsive design.
