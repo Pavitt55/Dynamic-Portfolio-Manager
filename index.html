@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav__items">
+        <img
+          src="images/logo.png"
+          alt="Portfolio logo"
+          class="nav__logo"
+          id="logo"
+        />
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#aboutme">About Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form id="portfolio-form">
+        <h2>Add Portfolio Entry</h2>
+        <label for="project-name">Project Name:</label>
+        <input
+          type="text"
+          id="project-name"
+          class="project-name"
+          name="project-name"
+          required
+        />
+
+        <label for="project-description">Description:</label>
+        <textarea
+          id="project-description"
+          name="project-description"
+          class="project-description"
+          maxlength="200"
+          rows="4"
+          placeholder="Enter a brief description of your project (Max 200 characters)"
+          required
+        ></textarea>
+
+        <label for="project-url">Project URL:</label>
+        <input
+          type="url"
+          id="project-url"
+          name="project-url"
+          class="project-url"
+          placeholder="https://example.com"
+          required
+        />
+
+        <label for="project-screenshot">Screenshot:</label>
+        <input
+          type="file"
+          id="project-screenshot"
+          class="project-screenshot"
+          name="project-screenshot"
+          accept="image/*"
+          required
+        />
+        <img
+          id="image-preview"
+          class="image-preview"
+          src=""
+          alt="Image Preview"
+        />
+        <button type="submit" class="button-save">Save Project</button>
+      </form>
+
+      <hr class="section-divider" />
+      <!--movments-->
+
+      <section id="portfolio" class="portfolio">
+        <div class="portfolio-heading"><h2>Your Portfolio</h2></div>
+        <div class="movements"></div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <section id="aboutme">
+        <div class="portfolio-heading"><h2>About Me</h2></div>
+        Hello! I'm Pavit Kaur, a passionate and dedicated web developer with a
+        strong background in HTML5, CSS, and JavaScript. I have a Bachelor's
+        degree in Technology and a keen interest in creating interactive,
+        user-friendly websites and applications. Over the years, I have honed my
+        skills through various projects, including responsive web design,
+        dynamic content manipulation, and user interface design. I thrive on
+        solving problems with code and enjoy the challenge of turning creative
+        ideas into functional web experiences. I am always learning new
+        techniques and best practices in web development to stay up-to-date with
+        the ever-evolving technology landscape. In my free time, I enjoy
+        exploring the latest web trends, building personal projects, and
+        contributing to community-driven initiatives. I am eager to continue
+        growing my skills and collaborating with others in the tech field to
+        create meaningful, impactful digital experiences. Feel free to explore
+        my portfolio and see how I combine creativity and technical knowledge to
+        build engaging web solutions!
+      </section>
+    </main>
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Edit Your Project</h2>
+      <form class="modal__form">
+        <label for="updated-project-name">Project Title:</label>
+        <input
+          type="text"
+          class="updated-project-name"
+          id="updated-project-name"
+          placeholder="Enter the Project Name"
+          required
+        />
+        <label for="updated-project-url">Project URL:</label>
+        <input
+          type="url"
+          id="updated-project-url"
+          name="updated-project-url"
+          class="updated-project-url"
+          placeholder="https://example.com"
+          required
+        />
+        <label for="updated-project-description">Project Description:</label>
+        <textarea
+          type="text"
+          placeholder="Enter a brief description of your project (Max 200 characters)"
+          class="updated-project-description"
+          id="updated-project-description"
+          maxlength="200"
+          rows="1"
+          required
+        ></textarea>
+        <label for="updated-screenshot">Screenshot:</label>
+        <input
+          type="file"
+          id="updated-screenshot"
+          name="updated-screenshot"
+          class="updated-screenshot"
+          accept="image/*"
+          required
+        />
+        <img
+          id="image-preview-edit"
+          class="image-preview-edit"
+          src=""
+          alt="Image Preview"
+        />
+        <button type="submit" class="update-button">Update Information</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

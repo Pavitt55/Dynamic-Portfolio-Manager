@@ -1,0 +1,37 @@
+Dynamic Portfolio Manager:
+
+DESCRIPTION: In this project, the "Dynamic Portfolio Manager" is designed to focus on the creating, editing, deletion and the management of the project cards with in the browser. This project holds on to the Local Storage to keep on the project data to ensure that all the changes through edition or deletion are retained across the browser.
+This project is basically a demonstration of JavaScript DOM manipulation, Event Handling, browser APIs ensuring seamless and persistent experience without the need for server-side backend to create a fully function and a user friendly web application.
+
+Technologies Used: 
+1. HTML5: For structuring the we-page.
+2. CSS: For styling and responsive design.
+3. JavaScript: For dynamic functionality and Local Storage.
+
+This includes:
+1. Responsive Design
+2. Efficient Data Management
+3. Interactive UI
+
+Users can:
+1. Create new project cards by entering the project title, project description(with maximum 200 words), project URL(can be a GitHub repository or the website itself) and a project screenshot.
+2. Edit the existing with modal interface, allowing modifications to title, description, URL or image updates reflecting in both UI and Local Storage.
+3. Deletion of cards with updates reflected immediately in both UI and Local Storage.
+4. Download Project details by saving individual project details in a structured format for offline reference.
+
+Features:
+1. Add projects: User can enter the project-title, project-description, project-image and project-URL.
+2. Edit Projects: User can also update project details such as project-title, project-description, project-image and project-URL.
+3. Delete Projects: User can delete unwanted projects with instant updates to the UI and Local Storage.
+4. Download Project Details: User can download individual project details in a structured format for offline reference.
+5. Persistent Storage: Data is saved in Local Storage, ensuring it remains across browser sessions(saveCardsLS() function is for saving the created, edited and deleted cards in the Local Storage).
+6. Dynamic Loading: With the help of the event: "DOMContentLoaded", saved projects from local storage are automatically saved upon page refresh(getCardsLS() function for loading the cards on the page when the page is refreshed from the Local Storage).
+
+How to use: 
+1. Open the index.html in your browser.
+2. Fill on the form to add a new project card(project-title, project-description, project-image and project-URL).
+3. Click on the project cards EDIT button to update or modify the content through a modal pop up.
+4. Click on DELETE button to remove the project card from the UI and the Loacal Storage.
+5. Use the DOWNLOAD button to save the details as a txt file.
+6. Refresh the page to see previously added, edited or deleted cards.
+
